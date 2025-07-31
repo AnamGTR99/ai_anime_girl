@@ -59,6 +59,8 @@ npm install
 Create a `.env` file in the root directory:
 ```env
 VITE_ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
+VITE_SAKURA_AGENT_ID=your_sakura_agent_id_here
+VITE_KAWAII_VOICE_ID=your_kawaii_voice_id_here
 VITE_OPENAI_API_KEY=your_openai_api_key_here
 VITE_ANTHROPIC_API_KEY=your_anthropic_api_key_here
 VITE_GEMINI_API_KEY=your_gemini_api_key_here

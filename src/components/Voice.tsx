@@ -14,8 +14,8 @@ export interface VoiceHandle {
 }
 
 // Add these constants for ElevenLabs
-const elevenLabsApiKey = 'sk_bd973aede25ed97d1ee3c17deb5c4e66520360945276312d';
-const kawaiiAerisitaVoiceId = 'vGQNBgLaiM3EdZtxIiuY';
+const elevenLabsApiKey = process.env.VITE_ELEVENLABS_API_KEY || 'your_elevenlabs_api_key_here';
+const kawaiiAerisitaVoiceId = process.env.VITE_KAWAII_VOICE_ID || 'your_kawaii_voice_id_here';
 
 const Voice = forwardRef<VoiceHandle, VoiceProps>(({ onTranscript }, ref) => {
   const {

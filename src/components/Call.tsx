@@ -33,8 +33,8 @@ const Call = forwardRef<CallHandle, CallProps>(({ onTranscript, onCallStart, onC
   const headMovementIntervalRef = useRef<number | null>(null);
 
   // ElevenLabs constants
-  const elevenLabsApiKey = 'sk_bd973aede25ed97d1ee3c17deb5c4e66520360945276312d';
-  const sakuraAgentId = 'agent_1301k15zp4k4ew4s5b1mvbmjg0d0';
+  const elevenLabsApiKey = process.env.VITE_ELEVENLABS_API_KEY || 'your_elevenlabs_api_key_here';
+  const sakuraAgentId = process.env.VITE_SAKURA_AGENT_ID || 'your_sakura_agent_id_here';
 
   // Advanced animation functions
   const startLipSync = () => {

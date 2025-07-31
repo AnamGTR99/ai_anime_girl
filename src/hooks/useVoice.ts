@@ -86,8 +86,8 @@ export const useVoice = () => {
     }
   };
 
-  const elevenLabsApiKey = 'sk_2cd6222f7b7b06ab9d68fc470b97af0a9383f6fae30cee50';
-  const kawaiiAerisitaVoiceId = 'vGQNBgLaiM3EdZtxIiuY'; // Actual voice ID for Kawaii Aerisita
+  const elevenLabsApiKey = process.env.VITE_ELEVENLABS_API_KEY || 'your_elevenlabs_api_key_here';
+  const kawaiiAerisitaVoiceId = process.env.VITE_KAWAII_VOICE_ID || 'your_kawaii_voice_id_here'; // Voice ID for Kawaii Aerisita
   let audioElement: HTMLAudioElement | null = null;
 
   const speak = async (text: string) => {
